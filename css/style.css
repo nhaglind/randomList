@@ -1,0 +1,28 @@
+body {
+  font-family: monospace;
+  overflow-x: hidden;
+  background: #1d2123; }
+
+.container {
+  width: 100%;
+  text-align: center;
+  color: #c2ffa8; }
+
+.intro {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 0px 20px 0px;
+  text-align: start; }
+
+.button-container {
+  background: #424242;
+  width: 500px;
+  margin: 0 auto;
+  padding: 30px 0px;
+  margin-top: 20px; }
+
+.addFieldButton {
+  margin-left: 10px;
+  padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */
