@@ -9,14 +9,6 @@ function additionalUser() {
   document.getElementById("userField").appendChild(inputField);
 }
 
-function enterAdditionalUser() {
-  document.getElementsByTagName("input").onkeydown = function(event) {
-    if (event.keyCode == 13) {
-      additionalUser();
-    }
-  }
-}
-
 function randomizr() {
   // initialize empty array
   var list = [];
@@ -36,6 +28,11 @@ function randomizr() {
   for (i = 0; i < inputAry.length; i++){
     inputAry[i].value = list[i];
   }
+
+  var randomMessage = "Your list has been randomized!";
+  var newParagraph = document.createElement("p");
+  newParagraph.textContent = randomMessage;
+  document.getElementById("userField").appendChild(newParagraph);
 }
 
 function removeUser() {
