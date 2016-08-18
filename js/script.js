@@ -16,9 +16,7 @@ function shuffle(array) {
     array[i] = array[j];
     array[j] = temp;
   }
-
   return array;
-
 }
 
 var messageBool = false;
@@ -52,7 +50,9 @@ function randomizr() {
   for (i = 0; i < inputAry.length; i++){
     inputAry[i].value = list[i];
   }
+
   message();
+  
 }
 
 function removeUser() {
