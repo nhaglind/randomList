@@ -7,7 +7,14 @@ function additionalUser() {
   inputField.appendChild(spanField);
   inputField.appendChild(addField);
   document.getElementById("userField").appendChild(inputField);
-  document.getElementById("span").appendChild(spanField);
+}
+
+function enterAdditionalUser() {
+  document.getElementsByTagName("input").onkeydown = function(event) {
+    if (event.keyCode == 13) {
+      additionalUser();
+    }
+  }
 }
 
 function randomizr() {
