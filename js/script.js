@@ -21,6 +21,17 @@ function shuffle(array) {
 
 }
 
+var messageBool = false;
+
+function message() {
+  if (messageBool == false) {
+  var randomMessage = "Your list has been randomized!";
+  var newParagraph = document.createElement("p");
+  newParagraph.textContent = randomMessage;
+  document.getElementById("message").appendChild(newParagraph);
+  messageBool = !messageBool;
+  }
+}
 
 function randomizr() {
   // initialize empty array
@@ -41,11 +52,7 @@ function randomizr() {
   for (i = 0; i < inputAry.length; i++){
     inputAry[i].value = list[i];
   }
-
-  var randomMessage = "Your list has been randomized!";
-  var newParagraph = document.createElement("p");
-  newParagraph.textContent = randomMessage;
-  document.getElementById("userField").appendChild(newParagraph);
+  message();
 }
 
 function removeUser() {
