@@ -9,6 +9,19 @@ function additionalUser() {
   document.getElementById("userField").appendChild(inputField);
 }
 
+function shuffle(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+
+  return array;
+
+}
+
+
 function randomizr() {
   // initialize empty array
   var list = [];
@@ -22,7 +35,7 @@ function randomizr() {
   }
 
   // randomize the list by comparing two random values
-  list.sort(function(a,b){ return Math.random() - Math.random()});
+  shuffle(list);
 
   // change the values of the input field to update the view
   for (i = 0; i < inputAry.length; i++){

@@ -3,6 +3,9 @@ body {
   overflow-x: hidden;
   background: #1d2123; }
 
+a {
+  color: #e67cb5; }
+
 .container {
   width: 100%;
   text-align: center;
@@ -19,5 +22,9 @@ body {
 
 #spanField {
   margin-right: 10px; }
+
+@media (max-width: 500px) {
+  .intro {
+    width: 300px; } }
 
 /*# sourceMappingURL=style.css.map */
