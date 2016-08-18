@@ -25,7 +25,7 @@ var messageBool = false;
 
 function message() {
   if (messageBool == false) {
-  var randomMessage = "Your list has been randomized!";
+  var randomMessage = "Your list has been shuffled!";
   var newParagraph = document.createElement("p");
   newParagraph.textContent = randomMessage;
   document.getElementById("message").appendChild(newParagraph);
